@@ -1,69 +1,71 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../../" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>. &#8212; Just Iterate!</title>
+    <title>Vector &#8212; Just Iterate!</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b76e3c8a" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
-    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'act_0/act_0_0/act_0_0_0/act_0_0_0_1';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="." href="act_0_0_0_2.html" />
-    <link rel="prev" title="" href="../../../intro.html" />
+    <link rel="prev" title="Framework" href="../../../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -73,27 +75,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -115,8 +113,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -174,13 +177,13 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../../../intro.html">
-                    
+                    Framework
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">.</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">.</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_0_0_0_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_0_0_0_3.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../act_0_0_1/act_0_0_1_1.html">.</a></li>
@@ -276,7 +279,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -285,14 +288,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -433,7 +436,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -444,11 +449,27 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>.</h1>
+    <h1>Vector</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#platform-setup">1. <strong>Platform Setup</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-app-integration">2. <strong>Web App Integration</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequent-iteration">3. <strong>Frequent Iteration</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annotation-and-documentation">4. <strong>Annotation and Documentation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-feedback-loop">5. <strong>User Feedback Loop</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interactivity">6. <strong>Interactivity</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scalability-and-collaboration">7. <strong>Scalability and Collaboration</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-structure-for-a-jupyter-book-chapter">Example Structure for a Jupyter Book Chapter:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-and-libraries">Tools and Libraries:</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -458,8 +479,80 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>.<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="vector">
+<h1>Vector<a class="headerlink" href="#vector" title="Permalink to this heading">#</a></h1>
+<p>I love the ambition here! Using Jupyter Books as a Trojan horse for deploying and iterating web app calculators is a brilliant strategy. It’s a versatile platform that can integrate code, data, and narrative seamlessly, making it perfect for clinical medicine applications. Here’s a breakdown of how you can approach this:</p>
+<section id="platform-setup">
+<h2>1. <strong>Platform Setup</strong><a class="headerlink" href="#platform-setup" title="Permalink to this heading">#</a></h2>
+<p>Ensure your Jupyter Book is properly set up and can handle frequent updates. You’ve already been using <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> for deployment, which is a great start.</p>
+</section>
+<section id="web-app-integration">
+<h2>2. <strong>Web App Integration</strong><a class="headerlink" href="#web-app-integration" title="Permalink to this heading">#</a></h2>
+<p>Embed your web app calculators within the Jupyter Book. This allows users to interact with the calculators directly within the narrative, providing immediate feedback and personalized risk estimations.</p>
+</section>
+<section id="frequent-iteration">
+<h2>3. <strong>Frequent Iteration</strong><a class="headerlink" href="#frequent-iteration" title="Permalink to this heading">#</a></h2>
+<p>Adopt a CI/CD (Continuous Integration/Continuous Deployment) approach. Automate your workflow to test, update, and deploy changes seamlessly. This ensures that new data, updated risk models, or bug fixes can be pushed frequently without manual intervention.</p>
+</section>
+<section id="annotation-and-documentation">
+<h2>4. <strong>Annotation and Documentation</strong><a class="headerlink" href="#annotation-and-documentation" title="Permalink to this heading">#</a></h2>
+<p>Provide thorough documentation and annotations within your Jupyter Book. This not only aids users in understanding the models and data but also facilitates peer review and collaboration. Use markdown, LaTeX, and other Jupyter tools to add explanatory text, equations, and references.</p>
+</section>
+<section id="user-feedback-loop">
+<h2>5. <strong>User Feedback Loop</strong><a class="headerlink" href="#user-feedback-loop" title="Permalink to this heading">#</a></h2>
+<p>Implement a mechanism for users to provide feedback directly within the Jupyter Book. This could be through embedded forms or links to a feedback repository. User feedback is crucial for refining the calculators and making them more robust.</p>
+</section>
+<section id="interactivity">
+<h2>6. <strong>Interactivity</strong><a class="headerlink" href="#interactivity" title="Permalink to this heading">#</a></h2>
+<p>Leverage Jupyter widgets and interactive plots (e.g., using Bokeh or Plotly) to make the calculators more engaging. Interactive elements help users better understand the implications of different risk factors.</p>
+</section>
+<section id="scalability-and-collaboration">
+<h2>7. <strong>Scalability and Collaboration</strong><a class="headerlink" href="#scalability-and-collaboration" title="Permalink to this heading">#</a></h2>
+<p>Encourage collaboration by making the project open-source (if possible). Allow other researchers to contribute new risk models or improve existing ones. Use version control effectively to manage contributions and iterations.</p>
+</section>
+<section id="example-structure-for-a-jupyter-book-chapter">
+<h2>Example Structure for a Jupyter Book Chapter:<a class="headerlink" href="#example-structure-for-a-jupyter-book-chapter" title="Permalink to this heading">#</a></h2>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># Personalized Risk Estimation in Clinical Medicine</span>
+
+<span class="gu">## Introduction</span>
+Provide an overview of the chapter and its objectives. Explain the importance of personalized risk estimation.
+
+<span class="gu">## Risk Model Description</span>
+Describe the statistical models used for risk estimation. Include equations, assumptions, and data sources.
+
+<span class="gu">## Web App Calculator</span>
+Embed the web app calculator. Ensure it’s interactive and user-friendly.
+</pre></div>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- Embed the calculator --&gt;</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;path/to/your/calculator.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;500px&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Example Use Case</span>
+Walk through a case study using the calculator. Show how different inputs affect risk estimation.
+
+<span class="gu">## Annotations and Explanation</span>
+Annotate the results, explaining the significance of each parameter. Use markdown and LaTeX for clarity.
+
+<span class="gu">## Feedback and Iteration</span>
+Include a feedback form or link to a repository for users to report issues or suggest improvements.
+</pre></div>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- Feedback form example --&gt;</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://forms.gle/example_feedback_form&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;500px&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="tools-and-libraries">
+<h2>Tools and Libraries:<a class="headerlink" href="#tools-and-libraries" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Jupyter Book</strong>: For creating and deploying the book.</p></li>
+<li><p><strong>ghp-import</strong>: For deploying to GitHub Pages.</p></li>
+<li><p><strong>JavaScript, HTML, CSS</strong>: For building and embedding web app calculators.</p></li>
+<li><p><strong>Bokeh, Plotly</strong>: For interactive plots and visualizations.</p></li>
+<li><p><strong>Continuous Integration Tools</strong>: GitHub Actions or similar for automated testing and deployment.</p></li>
+</ul>
+<p>This approach not only showcases your technical skills but also provides a valuable tool for the clinical community. By iterating frequently, you ensure the calculators stay relevant and accurate, ultimately contributing to better patient outcomes.</p>
 <Details>
    <Summary></Summary>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aesthetic</span> <span class="o">~</span> <span class="n">tokens</span>
@@ -639,7 +732,7 @@ April 9-11, 2024<br>
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../../_images/76a7b296abead99f28293ac051e84d57296ba8edbfba89ccdea4fb7076a80a1e.png" src="../../../_images/76a7b296abead99f28293ac051e84d57296ba8edbfba89ccdea4fb7076a80a1e.png" />
+<img alt="../../../_images/cdf3af65812f3991ca0f35d5541c206ccb4e6ab7ccdca1944bf7b8cca8c16fa8.png" src="../../../_images/cdf3af65812f3991ca0f35d5541c206ccb4e6ab7ccdca1944bf7b8cca8c16fa8.png" />
 </div>
 </div>
 <div class="cell tag_hide-input docutils container">
@@ -709,7 +802,7 @@ April 9-11, 2024<br>
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../../_images/24cd022af690bdf166ca70f735b96a6c8637f818023f3a926c04656ddcb811bc.png" src="../../../_images/24cd022af690bdf166ca70f735b96a6c8637f818023f3a926c04656ddcb811bc.png" />
+<img alt="../../../_images/82f49acc20afc5ef2273626cb416b226d9ded9931e1cb70513cd99fd758a12e6.png" src="../../../_images/82f49acc20afc5ef2273626cb416b226d9ded9931e1cb70513cd99fd758a12e6.png" />
 </div>
 </div>
 <p>The concept of the “tragic aesthetic” has been a topic of interest across various disciplines, from literature and art to philosophy and psychology. At its core, the tragic aesthetic involves an appreciation for stories, artworks, or situations that center on human suffering, moral dilemmas, or the inescapability of fate. Yet, these narratives often carry an undercurrent of beauty or a greater truth that can make the experience of them deeply moving or even cathartic.</p>
@@ -866,6 +959,7 @@ April 9-11, 2024<br>
 <Details>
    <Summary>💀</Summary>
 </Details></section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -894,7 +988,7 @@ April 9-11, 2024<br>
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -903,7 +997,7 @@ April 9-11, 2024<br>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"></p>
+        <p class="prev-next-title">Framework</p>
       </div>
     </a>
     <a class="right-next"
@@ -922,7 +1016,28 @@ April 9-11, 2024<br>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#platform-setup">1. <strong>Platform Setup</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-app-integration">2. <strong>Web App Integration</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequent-iteration">3. <strong>Frequent Iteration</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annotation-and-documentation">4. <strong>Annotation and Documentation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-feedback-loop">5. <strong>User Feedback Loop</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interactivity">6. <strong>Interactivity</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scalability-and-collaboration">7. <strong>Scalability and Collaboration</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-structure-for-a-jupyter-book-chapter">Example Structure for a Jupyter Book Chapter:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-and-libraries">Tools and Libraries:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
@@ -967,8 +1082,8 @@ By Nietzsche
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
   </footer>
