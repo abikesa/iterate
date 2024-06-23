@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>. &#8212; Just Iterate!</title>
+    <title>Variants &#8212; Just Iterate!</title>
   
   
   
@@ -181,10 +181,10 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">.</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Dionysus</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="act_0_0_0_1.html">Vector</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">.</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Variants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_0_0_0_3.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../act_0_0_1/act_0_0_1_1.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../act_0_0_1/act_0_0_1_2.html">.</a></li>
@@ -202,7 +202,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../act_0_1/act_0_1_2/act_0_1_2_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../act_0_1/act_0_1_2/act_0_1_2_3.html">.</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">.</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sing O Muse</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_0/act_1_0_0/act_1_0_0_1.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_0/act_1_0_0/act_1_0_0_2.html">.</a></li>
@@ -223,7 +223,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_1/act_1_1_2/act_1_1_2_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_1/act_1_1_2/act_1_1_2_3.html">.</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">.</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Apollo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_0/act_2_0_0/act_2_0_0_1.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_0/act_2_0_0/act_2_0_0_2.html">.</a></li>
@@ -447,7 +447,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>.</h1>
+    <h1>Variants</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -461,8 +461,74 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="variants">
+<h1>Variants<a class="headerlink" href="#variants" title="Permalink to this heading">#</a></h1>
+<p><img alt="" src="https://jhurepos.github.io" /></p>
+<ul class="simple">
+<li><p><strong>User:</strong> Logo: can you give me code to perfectly reproduce this?</p></li>
+<li><p><strong>GPT-4o:</strong> Sure, here is a Python script using Matplotlib to reproduce the “hub and spoke” diagram you provided:</p></li>
+</ul>
+<div class="cell tag_hide-input tag_hide-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Function to draw a circle</span>
+<span class="k">def</span> <span class="nf">draw_circle</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">center</span><span class="p">,</span> <span class="n">radius</span><span class="p">):</span>
+    <span class="n">circle</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Circle</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">circle</span><span class="p">)</span>
+
+<span class="c1"># Create figure and axis</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+
+<span class="c1"># Center and radius of the main hub</span>
+<span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">main_hub_radius</span> <span class="o">=</span> <span class="mf">0.3</span>
+
+<span class="c1"># Draw the main hub</span>
+<span class="n">draw_circle</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">center</span><span class="p">,</span> <span class="n">main_hub_radius</span><span class="p">)</span>
+
+<span class="c1"># Positions and radii of the spokes</span>
+<span class="n">spoke_positions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">),</span> <span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mf">0.6</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.6</span><span class="p">),</span>
+    <span class="p">(</span><span class="o">-</span><span class="mf">0.6</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.6</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">),</span>
+    <span class="p">(</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="n">spoke_radii</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span>
+
+<span class="c1"># Draw the spokes and connecting lines</span>
+<span class="k">for</span> <span class="n">pos</span><span class="p">,</span> <span class="n">radius</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">spoke_positions</span><span class="p">,</span> <span class="n">spoke_radii</span><span class="p">):</span>
+    <span class="n">draw_circle</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">radius</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">center</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">pos</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="p">[</span><span class="n">center</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">pos</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set limits and hide axes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+<span class="c1"># Display the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<img alt="../../../_images/fb5d820c0d357e6aa928b8213b5a63bfc75ae08644239048895828c5dcd2e68e.png" src="../../../_images/fb5d820c0d357e6aa928b8213b5a63bfc75ae08644239048895828c5dcd2e68e.png" />
+</div>
+</details>
+</div>
+<p>This script will generate a plot similar to the diagram you provided. You can tweak the positions and radii of the circles to better match the exact layout if needed.</p>
 <Details>
    <Summary></Summary>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aesthetic</span> <span class="o">~</span> <span class="n">tokens</span>
