@@ -182,10 +182,10 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">.</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Dionysus</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="act_0/act_0_0/act_0_0_0/act_0_0_0_1.html">Vector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="act_0/act_0_0/act_0_0_0/act_0_0_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="act_0/act_0_0/act_0_0_0/act_0_0_0_2.html">Variants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_0/act_0_0/act_0_0_0/act_0_0_0_3.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_0/act_0_0/act_0_0_1/act_0_0_1_1.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_0/act_0_0/act_0_0_1/act_0_0_1_2.html">.</a></li>
@@ -203,7 +203,7 @@
 <li class="toctree-l1"><a class="reference internal" href="act_0/act_0_1/act_0_1_2/act_0_1_2_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_0/act_0_1/act_0_1_2/act_0_1_2_3.html">.</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">.</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sing O Muse</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="act_1/act_1_0/act_1_0_0/act_1_0_0_1.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_1/act_1_0/act_1_0_0/act_1_0_0_2.html">.</a></li>
@@ -224,7 +224,7 @@
 <li class="toctree-l1"><a class="reference internal" href="act_1/act_1_1/act_1_1_2/act_1_1_2_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_1/act_1_1/act_1_1_2/act_1_1_2_3.html">.</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">.</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Apollo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="act_2/act_2_0/act_2_0_0/act_2_0_0_1.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_2/act_2_0/act_2_0_0/act_2_0_0_2.html">.</a></li>
@@ -486,6 +486,7 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
+<span class="c1"># Create a directed graph</span>
 <span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
 <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;1. Root&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2500</span><span class="p">,</span> <span class="mi">700</span><span class="p">))</span>
 <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;2. Pentatonic&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">4200</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
@@ -500,25 +501,38 @@ document.write(`
 <span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="s2">&quot;4. Chromatic&quot;</span><span class="p">,</span> <span class="s2">&quot;5. Temperament&quot;</span><span class="p">)])</span>
 <span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="s2">&quot;5. Temperament&quot;</span><span class="p">,</span> <span class="s2">&quot;6. Expression&quot;</span><span class="p">)])</span>
 
+<span class="c1"># Get positions</span>
 <span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">get_node_attributes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">)</span>
-<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;4. Chromatic&quot;</span><span class="p">:</span> <span class="s2">&quot;4. Communicate&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;1. Root&quot;</span><span class="p">:</span> <span class="s2">&quot;1. Voir&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;2. Pentatonic&quot;</span><span class="p">:</span> <span class="s2">&quot;2. Savoir&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;3. Diatonic&quot;</span><span class="p">:</span> <span class="s2">&quot;3. Pouvoir&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;5. Temperament&quot;</span><span class="p">:</span> <span class="s2">&quot;5. Lead&quot;</span><span class="p">,</span>
-          <span class="s2">&quot;6. Expression&quot;</span><span class="p">:</span> <span class="s2">&quot;6. Accomplish&quot;</span><span class="p">}</span>  <span class="c1"># Added label for &quot;NDI&quot; node in the labels dictionary</span>
 
-<span class="c1"># Update color for the &quot;Scenarios&quot; node</span>
-<span class="n">node_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lavender&quot;</span><span class="p">,</span> <span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lightblue&quot;</span><span class="p">]</span>
-<span class="c1"># node_colors = [&quot;lightblue&quot;,&quot;lavender&quot;, &quot;lavender&quot;, &quot;lightgreen&quot;, &quot;lightpink&quot;, &quot;lightpink&quot;]</span>
-<span class="c1"># Suppress the deprecation warning</span>
+<span class="c1"># Custom labels for nodes</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;1. Root&quot;</span><span class="p">:</span> <span class="s2">&quot;1. Voir&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;2. Pentatonic&quot;</span><span class="p">:</span> <span class="s2">&quot;2. Savoir&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;3. Diatonic&quot;</span><span class="p">:</span> <span class="s2">&quot;3. Pouvoir&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;4. Chromatic&quot;</span><span class="p">:</span> <span class="s2">&quot;4. Communicate&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;5. Temperament&quot;</span><span class="p">:</span> <span class="s2">&quot;5. Lead&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;6. Expression&quot;</span><span class="p">:</span> <span class="s2">&quot;6. Accomplish&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Node colors</span>
+<span class="n">node_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lavender&quot;</span><span class="p">,</span> <span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lightblue&quot;</span><span class="p">]</span>
+
+<span class="c1"># Suppress deprecation warning</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">DeprecationWarning</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">15000</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">)</span>
-<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span> <span class="c1"># , font_weight=&#39;bold&#39;</span>
-<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="c1"># Draw the graph</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span>
+    <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">15000</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span>
+    <span class="n">linewidths</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span>
+<span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span>
+    <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">arrows</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">arrowsize</span><span class="o">=</span><span class="mi">100</span>
+<span class="p">)</span>
+
+<span class="c1"># Set axis limits and remove the axis</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">5000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
@@ -528,7 +542,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="_images/5f9aa9b396fe8c076d8e402191de5477aae96f69cc39dc39c1db31649bef06a5.png" src="_images/5f9aa9b396fe8c076d8e402191de5477aae96f69cc39dc39c1db31649bef06a5.png" />
+<img alt="_images/b14b58e880b9ad42264da45f8947b0ba5ebad5d1a4d51b79399d9fb5dcf86d9c.png" src="_images/b14b58e880b9ad42264da45f8947b0ba5ebad5d1a4d51b79399d9fb5dcf86d9c.png" />
 </div>
 </div>
 <section id="dionysus-1-2-3">
